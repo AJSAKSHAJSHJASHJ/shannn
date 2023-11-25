@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI PO</title>
+    <style>
+      body {
+        background: linear-gradient(109.6deg, rgb(235, 173, 254) 11.2%, rgb(254, 150, 150) 90.4%);
+        margin: 120px;
+        text-align: center;
+        position: relative;
+      }
+      #envelope {
+        width: 700px;
+        height: 400px;
+        background-color: #ab6f30;
+        border: 2px solid #ccc;
+        position: relative;
+        overflow: visible;
+        transition: height 1s;
+        margin-left: 178px;
+      }
+      #flap {
+        width: 100%;
+        height: 100px;
+        background-color: #825627;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: top right;
+        transform: perspective(600px) rotateX(0deg);
+        transition: transform 1s;
+      }
+      #things {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background-color: white;
+        opacity: 0;
+        transition: opacity 0.5s 1s;
+      }
+      #cont {
+        margin: 20px;
+        text-align: left;
+      }
+      .unfolded #flap {
+        transform: perspective(600px) rotateX(-180deg);
+      }
+
+      .unfolded #envelope {
+        height: 300px;
+      }
+
+      .unfolded #things {
+        opacity: 1;
+      }
+
+      #dahmn {
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      #SOC {
+        transition: all 0.3s ease;
+        height: 40px;
+        border: 0px;
+        border-radius: 10px;
+        position: relative;
+      }
+	  .shan {
+		background-image: url("teddy.jpeg");
+	  }
+    </style>
+  </head>
+
+  <body>
+    <div id="envelope">
+      <div id="flap"></div>
+      <div id="things">
+        <div id="cont">
+          <h1>Hi HJHAJHSJAHSJ</h1>
+          <p style="clear: both; overflow: auto;">HWAHHAHAHSHAHS HELLO, gusto ko lang sabihin ulit na thank you ket napaka dami kong pinoproblema or inooverthink, di ko maiwasan e HWAHJHSJAHJHSJHJSJSHJ, proud ako sayo lagi, basta tandaan mo lang na pwede ka mag open up sakin ket ano pa yan, kung nabobother ka, or may problem ka, galit ka, or may gusto ka, or may need ako baguhin, maging open lang tayo sana lagi ket ano pang problema, mas maayos na pagusapan bago magdecide... Ikaw laging pipilin. HWJAHJSHJHJHSJHDHSJHASJ. DI PA KASI AKO NAKA IPON PARA SA REGALO, kaya ito nalang muna ginawa ko WHJAHJHSJAHJSHJHJSHJHAJHJS. 147 lines, and ilang beses ko lang naman to inulit kasi ayaw gumana :) HSJAHSJHAJSHAJSHJ yun langgggg</p>
+		  <img src="tulip.jpeg" height="100" width="100" style="float: right; clear: right;"></img>
+		  <br>
+          <button onclick="dom()" class="shan">Pindutin mo to pagtapos mo na basahin</button>
+        </div>
+      </div>
+    </div>
+    <button id="mira" onclick="lols()"><h1>BUKSAN MU NA</h1></button>
+
+    <script>
+      function dom() {
+        var ans = prompt("Oks ba gawa ko hashajs", "Yes/No");
+        if (ans == "Yes" || ans == "yes" || ans == "YES") {
+          alert("JHWJAHJSHAJSH OOKAIIII");
+          alert("para sayo naman yang code e");
+        } else if (ans == "No" || ans == "NO" || ans == "no") {
+          alert("luh :(");
+          document.write(
+            "<div id='dahmn'><h1>Second Chance pls</h1><br><br><button id='yes' onclick='sem()'>Yes</button><br><button id='SOC'>No</button>"
+          );
+
+          // Add event listener after dynamically creating the button
+          addEventListenerToSOC();
+        } else {
+          alert(
+            "Ayusin kasi sagot HWAHSAJSHAJSH, pindutin mo ulet yon"
+          );
+        }
+      }
+
+      function lols() {
+        var envelope = document.getElementById('envelope');
+        envelope.classList.add('unfolded');
+      }
+
+      function sem() {
+        alert("OKIEEEE gagandahan ko next timee, BYEEEEE");
+      }
+
+      // Function to add event listener to the button with id 'SOC'
+      function addEventListenerToSOC() {
+        let b = document.getElementById("SOC");
+
+        if (b) {
+  b.style.position = "absolute";
+  b.addEventListener('mouseover', function () {
+    let randX = Math.random() * 1000;
+    let randY = Math.random() * 700;
+
+    b.style.left = randX + "px";
+    b.style.top = randY + "px";
+  });
+        } else {
+          console.error("Button not found");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
